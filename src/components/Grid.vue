@@ -1,7 +1,7 @@
 <template>
   <div class="md-alignment-top-center">
 		
-		<md-card class="margin">
+		<md-card class="margin font">
       <md-card-media-cover md-solid>
         <md-card-media md-ratio="3:4">
           <router-link to='/product'>
@@ -12,7 +12,7 @@
         <md-card-area>
           <md-card-header>
             <span class="md-title">50€</span>
-            <span class="md-subhead">Chanel pink sweatpants</span>
+            <span class="md-subhead">Chanel pink sweater</span>
           </md-card-header>
 
           <md-card-actions>
@@ -39,7 +39,7 @@
         <md-card-area>
           <md-card-header>
             <span class="md-title">40€</span>
-            <span class="md-subhead">Asos oversized hoodie</span>
+            <span class="md-subhead">Gucci oversized hoodie</span>
           </md-card-header>
 
           <md-card-actions>
@@ -139,7 +139,7 @@
         <md-card-area>
           <md-card-header>
             <span class="md-title">40€</span>
-            <span class="md-subhead">Asos blue hoodie</span>
+            <span class="md-subhead">Chanel blue hoodie</span>
           </md-card-header>
 
           <md-card-actions>
@@ -189,7 +189,7 @@
         <md-card-area>
           <md-card-header>
             <span class="md-title">20€</span>
-            <span class="md-subhead">Asos bodysuit</span>
+            <span class="md-subhead">Gucci bodysuit</span>
           </md-card-header>
 
           <md-card-actions>
@@ -235,4 +235,7 @@ export default {
 h3 {
   margin: 40px 0 0;
 }
+.font{
+  font-family: 'Poppins', sans-serif;
+  }
 </style>

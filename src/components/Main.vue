@@ -10,6 +10,7 @@
 				<p class="test-color">Current color: {{hex}}</p>
 			</div>
 			<Grid/>
+			<BodySize/>
 		</div>
   </div>
 </template>
@@ -28,7 +29,9 @@ export default {
 	},
 	components: {
 		FileUpload,
-		Grid
+		BodySize
+		Grid,
+		Topbar,
 	},
   props: {
     msg: String

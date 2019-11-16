@@ -17,4 +17,7 @@ export default {
     width: 792px;
     height: 720px;
   }
+	div#exercise-slider-row.slider-row{
+	display: none !important
+}
 </style>
