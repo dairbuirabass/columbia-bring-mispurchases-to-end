@@ -4,12 +4,14 @@
 		<FileUpload v-on:childToParent="passImgToCanvas" />
     <canvas id="uploadedImage" v-on:click="getCurrentColor"></canvas>
     <p>Current color: {{hex}}</p>
+		<Grid />
   </div>
 </template>
 
 <script>
 import FileUpload from './FileUpload'
 import Topbar from './Topbar'
+import Grid from './Grid'
 
 export default {
   name: 'Main',
@@ -20,7 +22,8 @@ export default {
 	},
 	components: {
 		FileUpload,
-		Topbar
+		Topbar,
+		Grid
 	},
   props: {
     msg: String
