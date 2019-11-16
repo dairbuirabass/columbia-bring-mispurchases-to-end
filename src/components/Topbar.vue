@@ -20,7 +20,7 @@
         </div>
       </div>
     </md-toolbar>
-    <md-menu md-size="small">
+    <md-menu class="menu" md-size="small">
       <md-button md-menu-trigger>New in</md-button>
       <md-button md-menu-trigger>Clothing</md-button>
       <md-button md-menu-trigger>Shoes</md-button>
@@ -39,20 +39,12 @@ export default {
   data: () => ({
     selectedEmployee: null,
       employees: [
-        'Jim Halpert',
-        'Dwight Schrute',
-        'Michael Scott',
-        'Pam Beesly',
-        'Angela Martin',
-        'Kelly Kapoor',
-        'Ryan Howard',
-        'Kevin Malone',
-        'Creed Bratton',
-        'Oscar Nunez',
-        'Toby Flenderson',
-        'Stanley Hudson',
-        'Meredith Palmer',
-        'Phyllis Lapin-Vance'
+        'T-Shirts',
+        'Blouses',
+        'Crop Tops',
+        'Kimonos',
+        'Sweaters',
+        'Evening Tops'
       ]
   })
 }
@@ -71,5 +63,9 @@ export default {
   }
   .md-toolbar-section-start{
     margin-left: 280px;
+  }
+  .menu{
+    background-color: #ffb3b3;
+    width: 100%;
   }
 </style>

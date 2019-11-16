@@ -1,6 +1,6 @@
 <template>
   <div class="file-upload">
-    <md-card class="md-accent">
+    <div class="md-accent">
       <md-card-header>
         <div class="md-title">Want to know what colors would look best on you?</div>
         <md-divider></md-divider>
@@ -13,7 +13,7 @@
           </md-field>
         </md-card-media>
       </md-card-header>
-    </md-card>
+    </div>
   </div>
 </template>
 

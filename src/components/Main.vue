@@ -1,16 +1,19 @@
 <template>
   <div class="main">
 		<Topbar />
-		<FileUpload v-on:childToParent="passImgToCanvas" />
-		<md-card class="md-accent">
-			<div class="image">
-				<canvas id="uploadedImage" v-on:click="getCurrentColor"></canvas>
+		<br>
+		<div class="body-items">
+			<FileUpload v-on:childToParent="passImgToCanvas" />
+			<div class="md-accent">
+				<div class="image">
+					<canvas id="uploadedImage" v-on:click="getCurrentColor"></canvas>
+				</div>
+				<br>
+				<md-button class="md-raised md-accent2 btn">Analyze</md-button>
+				<p class="test-color">Current color: {{hex}}</p>
 			</div>
-			<br>
-			<md-button class="md-raised md-accent2 btn">Analyze</md-button>
-			<p>Current color: {{hex}}</p>
-		</md-card>
-		<Grid/>
+			<Grid/>
+		</div>
   </div>
 </template>
 
@@ -95,5 +98,14 @@ export default {
 	.btn{
 		width: 200px;
 		margin-left: 70px;
+	}
+	.body-items{
+		margin: 20px;
+		background-color: rgb(230, 230, 230);
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	.test-color{
+		margin: 10px;
 	}
 </style>
