@@ -7,9 +7,10 @@
       </router-link>
       <div class="md-toolbar-section-start">
         <md-autocomplete
+          v-model="selectedCategory"
           class="search font"
           md-layout="box"
-          :md-options="employees"
+          :md-options="categories"
           md-dense>
           <label>Search</label>
         </md-autocomplete>
@@ -39,15 +40,15 @@
 export default {
   name: 'Topbar',
   data: () => ({
-    selectedEmployee: null,
-      employees: [
-        'T-Shirts',
-        'Blouses',
-        'Crop Tops',
-        'Kimonos',
-        'Sweaters',
-        'Evening Tops'
-      ]
+    selectedCategory: null,
+    categories: [
+      'T-Shirts',
+      'Blouses',
+      'Crop Tops',
+      'Kimonos',
+      'Sweaters',
+      'Evening Tops'
+    ]
   })
 }
 </script>

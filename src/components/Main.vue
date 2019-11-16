@@ -1,13 +1,11 @@
 <template>
   <div class="main">
-		<br>
 		<div class="body-items">
 			<FileUpload v-on:childToParent="passImgToCanvas" />
 			<div class="md-accent">
 				<div class="image">
 					<canvas id="uploadedImage" v-on:click="getCurrentColor"></canvas>
 				</div>
-				<br>
 				<md-button class="md-raised md-accent2 btn">Analyze</md-button>
 				<p class="test-color">Current color: {{hex}}</p>
 			</div>
@@ -19,6 +17,7 @@
 <script>
 import FileUpload from './FileUpload'
 import Grid from './Grid'
+import { mapActions, mapMutations } from 'vuex'
 
 export default {
   name: 'Main',
@@ -39,9 +38,9 @@ export default {
 			let canvas = document.getElementById('uploadedImage');
 			let ctx = canvas.getContext("2d");
 			let reader = new FileReader();
-			reader.onload = function(event){
+			reader.onload = function (event) {
 					let img = new Image();
-					img.onload = function(){
+					img.onload = function () {
 							canvas.style.width = '20%';
 							canvas.width = img.width;
 							canvas.height = img.height;
@@ -59,7 +58,8 @@ export default {
 			let c = canvas.getContext('2d');
 			let p = c.getImageData(x, y, 1, 1).data; 
 			let hex = "#" + ("000000" + this.rgbToHex(p[0], p[1], p[2])).slice(-6);
-			this.hex = hex
+      this.hex = hex
+      this.setEyesColor(hex)
 		},
 		findPos: function (obj) {
       var curleft = 0, curtop = 0;
@@ -76,6 +76,20 @@ export default {
       if (r > 255 || g > 255 || b > 255)
       throw "Invalid color component";
       return ((r << 16) | (g << 8) | b).toString(16);
+    },
+    ...mapActions({
+      setNewEyesColor ({ commit }, value) {
+        commit('setEyesColor', value)
+      }
+    }),
+    ...mapMutations({
+      setEyesColor (colorEyes, value) {
+        // console.log(value)
+        colorEyes.value = value
+      }
+    }),
+    setEyesColor: function (hex) {
+      this.$store.dispatch('setNewEyesColor', hex)
     }
   }
 }
@@ -89,23 +103,23 @@ export default {
       width: 20px;
     }
 	}
-	.image{
+	.image {
 		margin-left: 50px;
 	}
-	.btn{
+	.btn {
 		width: 200px;
 		margin-left: 70px;
 	}
-	.body-items{
+	.body-items {
 		margin: 20px;
 		background-color: rgb(230, 230, 230);
 		border-radius: 10px;
 		overflow: hidden;
 	}
-	.test-color{
+	.test-color {
 		margin: 10px;
 	}
-	.loader{
+	.loader {
 		width: 40%;
 	}
 </style>
