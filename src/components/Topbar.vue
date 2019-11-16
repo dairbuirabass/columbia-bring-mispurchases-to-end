@@ -68,7 +68,6 @@ export default {
   }
   .search {
     max-width: 500px;
-    padding-left: 200px;
   }
   .md-toolbar-section-start{
     margin-left: 280px;

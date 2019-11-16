@@ -2,9 +2,14 @@
   <div class="main">
 		<Topbar />
 		<FileUpload v-on:childToParent="passImgToCanvas" />
-    <canvas id="uploadedImage" v-on:click="getCurrentColor"></canvas>
-    <p>Current color: {{hex}}</p>
-		<Grid />
+		<md-card class="md-accent">
+			<div class="image">
+				<canvas id="uploadedImage" v-on:click="getCurrentColor"></canvas>
+			</div>
+			<br>
+			<md-button class="md-raised md-accent2 btn">Analyze</md-button>
+			<p>Current color: {{hex}}</p>
+		</md-card>
   </div>
 </template>
 
@@ -36,7 +41,7 @@ export default {
 			reader.onload = function(event){
 					let img = new Image();
 					img.onload = function(){
-							canvas.style.width = '100%';
+							canvas.style.width = '20%';
 							canvas.width = img.width;
 							canvas.height = img.height;
 							ctx.drawImage(img,0,0);
@@ -82,5 +87,12 @@ export default {
 			margin: 10px auto 0;
       width: 20px;
     }
-  }
+	}
+	.image{
+		margin-left: 50px;
+	}
+	.btn{
+		width: 200px;
+		margin-left: 70px;
+	}
 </style>
