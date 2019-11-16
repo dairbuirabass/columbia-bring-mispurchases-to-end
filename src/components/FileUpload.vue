@@ -1,10 +1,16 @@
 <template>
   <div class="file-upload">
-    <h3>Upload image</h3>
-		<md-field>
-      <label>Upload files</label>
-			<md-file v-on:change="emitToParent" placeholder="A nice input placeholder" />
-    </md-field>
+    <md-card class="md-primary">
+      <md-card-header>
+        <div class="md-title">Upload image</div>
+        <md-card-media>
+          <md-field>
+            <label>Upload files</label>
+            <md-file v-on:change="emitToParent" placeholder="Hello" />
+          </md-field>
+        </md-card-media>
+      </md-card-header>
+    </md-card>
   </div>
 </template>
 
@@ -21,7 +27,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
+.md-card {
+    width: 1300px;
+    margin: 4px;
+    display: inline-block;
+    vertical-align: top;
+  }
 </style>
