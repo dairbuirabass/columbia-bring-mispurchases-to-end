@@ -2,7 +2,7 @@
   <div class="file-upload">
     <div class="md-accent">
       <md-card-header>
-        <div class="md-title">Want to know what colors would look best on you?</div>
+        <div class="md-title font">Want to know what colors would look best on you?</div>
         <md-divider></md-divider>
         <br>
         <div class="md-subheading">Try our color analysis tool. Upload a picture of your face</div>
@@ -10,6 +10,7 @@
           <md-field>
             <label class="text">Upload image</label>
             <md-file class="input" v-on:change="emitToParent" placeholder="Upload image" />
+            <md-divider orientation="vertical" />
           </md-field>
         </md-card-media>
       </md-card-header>
@@ -30,6 +31,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap');
+
 .text{
   color:black;
   width: 100%;
@@ -47,4 +50,10 @@ export default {
 .media {
   width: 200px;
 }
+.font{
+  font-family: 'Poppins', sans-serif;
+  }
+.md-progress-bar {
+    margin: 24px;
+  }
 </style>

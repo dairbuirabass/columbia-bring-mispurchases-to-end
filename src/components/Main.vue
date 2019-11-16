@@ -11,6 +11,7 @@
 				<br>
 				<md-button class="md-raised md-accent2 btn">Analyze</md-button>
 				<p class="test-color">Current color: {{hex}}</p>
+				<md-progress-bar class="md-primary loader" md-mode="indeterminate"></md-progress-bar>
 			</div>
 			<Grid/>
 		</div>
@@ -107,5 +108,8 @@ export default {
 	}
 	.test-color{
 		margin: 10px;
+	}
+	.loader{
+		width: 40%;
 	}
 </style>
