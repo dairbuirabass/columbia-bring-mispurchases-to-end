@@ -4,7 +4,9 @@
 		<md-card class="margin">
       <md-card-media-cover md-solid>
         <md-card-media md-ratio="3:4">
-          <img src="../assets/clothes/1.jpeg" alt="Skyscraper">
+          <router-link to='/product'>
+            <img src="../assets/clothes/1.jpeg" alt="Skyscraper">
+          </router-link>
         </md-card-media>
 
         <md-card-area>
@@ -29,7 +31,9 @@
 		<md-card>
       <md-card-media-cover md-solid>
         <md-card-media md-ratio="3:4">
-          <img src="../assets/clothes/2.jpeg" alt="Skyscraper">
+          <router-link to='/product'>
+            <img src="../assets/clothes/2.jpeg" alt="Skyscraper">
+          </router-link>
         </md-card-media>
 
         <md-card-area>

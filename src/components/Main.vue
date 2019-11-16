@@ -1,6 +1,5 @@
 <template>
   <div class="main">
-		<Topbar />
 		<br>
 		<div class="body-items">
 			<FileUpload v-on:childToParent="passImgToCanvas" />
@@ -19,7 +18,6 @@
 
 <script>
 import FileUpload from './FileUpload'
-import Topbar from './Topbar'
 import Grid from './Grid'
 
 export default {
@@ -31,7 +29,6 @@ export default {
 	},
 	components: {
 		FileUpload,
-		Topbar,
 		Grid
 	},
   props: {

@@ -2,7 +2,9 @@
   <div class="topbar">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <md-toolbar class="md-primary">
-      <h3 class="md-title font">the point of no return</h3>
+      <router-link to='/'>
+        <h3 class="md-title font">the point of no return</h3>
+      </router-link>
       <div class="md-toolbar-section-start">
         <md-autocomplete
           class="search font"
