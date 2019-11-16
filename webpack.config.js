@@ -1,7 +1,4 @@
 module.exports = {
-  entry: [
-    './dist/index.html'
-  ],
   output: {
     path: __dirname,
     publicPath: '/',
