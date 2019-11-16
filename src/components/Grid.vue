@@ -35,7 +35,7 @@
         <md-card-area>
           <md-card-header>
             <span class="md-title">40€</span>
-            <span class="md-subhead">Asos oversized hoodie</span>
+            <span class="md-subhead">Gucci oversized hoodie</span>
           </md-card-header>
 
           <md-card-actions>
@@ -135,7 +135,7 @@
         <md-card-area>
           <md-card-header>
             <span class="md-title">40€</span>
-            <span class="md-subhead">Asos blue hoodie</span>
+            <span class="md-subhead">Chanel blue hoodie</span>
           </md-card-header>
 
           <md-card-actions>
@@ -185,7 +185,7 @@
         <md-card-area>
           <md-card-header>
             <span class="md-title">20€</span>
-            <span class="md-subhead">Asos bodysuit</span>
+            <span class="md-subhead">Gucci bodysuit</span>
           </md-card-header>
 
           <md-card-actions>
