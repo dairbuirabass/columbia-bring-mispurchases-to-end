@@ -10,6 +10,7 @@
 			<md-button class="md-raised md-accent2 btn">Analyze</md-button>
 			<p>Current color: {{hex}}</p>
 		</md-card>
+		<Grid/>
   </div>
 </template>
 
