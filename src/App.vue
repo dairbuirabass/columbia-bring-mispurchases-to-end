@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Main msg="Point Of No Return"/>
+    <Main />
   </div>
 </template>
 
@@ -17,8 +17,8 @@ export default {
 
 <style>
 #app {
-  margin: 60px auto 0;
-  max-width: 1080px;
+  margin: 3px auto 0;
+  max-width: 100%;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
