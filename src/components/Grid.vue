@@ -1,16 +1,18 @@
 <template>
   <div class="md-alignment-top-center">
 		
-		<md-card class="margin">
+		<md-card class="margin font">
       <md-card-media-cover md-solid>
         <md-card-media md-ratio="3:4">
-          <img src="../assets/clothes/1.jpeg" alt="Skyscraper">
+          <router-link to='/product'>
+            <img src="../assets/clothes/1.jpeg" alt="Skyscraper">
+          </router-link>
         </md-card-media>
 
         <md-card-area>
           <md-card-header>
             <span class="md-title">50€</span>
-            <span class="md-subhead">Chanel pink sweatpants</span>
+            <span class="md-subhead">Chanel pink sweater</span>
           </md-card-header>
 
           <md-card-actions>
@@ -29,7 +31,9 @@
 		<md-card>
       <md-card-media-cover md-solid>
         <md-card-media md-ratio="3:4">
-          <img src="../assets/clothes/2.jpeg" alt="Skyscraper">
+          <router-link to='/product'>
+            <img src="../assets/clothes/2.jpeg" alt="Skyscraper">
+          </router-link>
         </md-card-media>
 
         <md-card-area>
@@ -207,8 +211,7 @@
 <style lang="css" scoped>
   .md-card {
     width: 320px;
-    margin-left: 125px;
-		margin-bottom: 125px;
+    margin: 50px;
     display: inline-block;
     vertical-align: top;
 
@@ -232,4 +235,7 @@ export default {
 h3 {
   margin: 40px 0 0;
 }
+.font{
+  font-family: 'Poppins', sans-serif;
+  }
 </style>

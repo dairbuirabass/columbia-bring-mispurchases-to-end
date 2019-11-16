@@ -2,14 +2,16 @@
   <div class="topbar">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <md-toolbar class="md-primary">
-      <h3 class="md-title">the point of no return</h3>
+      <router-link to='/'>
+        <h3 class="md-title font">the point of no return</h3>
+      </router-link>
       <div class="md-toolbar-section-start">
         <md-autocomplete
-          class="search"
+          class="search font"
           md-layout="box"
           :md-options="employees"
           md-dense>
-          <label>Search...</label>
+          <label>Search</label>
         </md-autocomplete>
       </div>
       <div class="md-toolbar-section-end">
@@ -52,6 +54,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+  @import url('https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap');
   .md-toolbar{
     width: 100%;
   }
@@ -67,5 +70,8 @@ export default {
   .menu{
     background-color: #ffb3b3;
     width: 100%;
+  }
+  .font{
+  font-family: 'Poppins', sans-serif;
   }
 </style>

@@ -1,6 +1,5 @@
 <template>
   <div class="main">
-		<Topbar />
 		<br>
 		<div class="body-items">
 			<FileUpload v-on:childToParent="passImgToCanvas" />
@@ -20,7 +19,6 @@
 
 <script>
 import FileUpload from './FileUpload'
-import Topbar from './Topbar'
 import Grid from './Grid'
 import BodySize from './BodySize'
 
@@ -33,9 +31,9 @@ export default {
 	},
 	components: {
 		FileUpload,
-		Topbar,
-		Grid,
 		BodySize
+		Grid,
+		Topbar,
 	},
   props: {
     msg: String
@@ -110,5 +108,8 @@ export default {
 	}
 	.test-color{
 		margin: 10px;
+	}
+	.loader{
+		width: 40%;
 	}
 </style>
