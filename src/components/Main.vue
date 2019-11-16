@@ -29,9 +29,8 @@ export default {
 	},
 	components: {
 		FileUpload,
-		BodySize
-		Grid,
-		Topbar,
+		BodySize,
+		Grid
 	},
   props: {
     msg: String

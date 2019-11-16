@@ -1,7 +1,7 @@
 <template>
   <div class="body-size">
      <!-- http://episodic-vuejs.s3-website.eu-central-1.amazonaws.com -->
-    <iframe src="https://www.bodyvisualizer.com/" height="720" width="792" />
+    <iframe src="https://www.bodyvisualizer.com/" />
   </div>
 </template>
 
@@ -14,10 +14,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   iframe {
-    width: 792px;
-    height: 720px;
+    width: 800px;
+    height: 600px;
+    vertical-align: none;
   }
-	div#exercise-slider-row.slider-row{
-	display: none !important
-}
 </style>
