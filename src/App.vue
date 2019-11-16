@@ -17,7 +17,7 @@ export default {
 
 <style src="./style.scss" lang="scss">
 #app {
-  margin: 3px auto 0;
+  margin: 10px auto 0;
   max-width: 100%;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
