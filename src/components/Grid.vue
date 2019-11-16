@@ -1,91 +1,16 @@
 <template>
-  <div>
-    
-    <md-card>
-      <md-card-media-cover md-solid>
-        <md-card-media md-ratio="1:1">
-          <img src="https://vuematerial.io/assets/examples/card-sky.jpg" alt="Skyscraper">
-        </md-card-media>
-
-        <md-card-area>
-          <md-card-header>
-            <span class="md-title">Solid background</span>
-            <span class="md-subhead">1/1 image</span>
-          </md-card-header>
-
-          <md-card-actions>
-            <md-button class="md-icon-button">
-              <md-icon>favorite</md-icon>
-            </md-button>
-
-            <md-button class="md-icon-button">
-              <md-icon>share</md-icon>
-            </md-button>
-          </md-card-actions>
-        </md-card-area>
-      </md-card-media-cover>
-    </md-card>
+  <div class="md-alignment-top-center">
 		
-		<md-card>
+		<md-card class="margin">
       <md-card-media-cover md-solid>
-        <md-card-media md-ratio="1:1">
-          <img src="https://vuematerial.io/assets/examples/card-sky.jpg" alt="Skyscraper">
-        </md-card-media>
-
-        <md-card-area>
-          <md-card-header>
-            <span class="md-title">Solid background</span>
-            <span class="md-subhead">1/1 image</span>
-          </md-card-header>
-
-          <md-card-actions>
-            <md-button class="md-icon-button">
-              <md-icon>favorite</md-icon>
-            </md-button>
-
-            <md-button class="md-icon-button">
-              <md-icon>share</md-icon>
-            </md-button>
-          </md-card-actions>
-        </md-card-area>
-      </md-card-media-cover>
-    </md-card>
-		
-		<md-card>
-      <md-card-media-cover md-solid>
-        <md-card-media md-ratio="1:1">
-          <img src="https://vuematerial.io/assets/examples/card-sky.jpg" alt="Skyscraper">
-        </md-card-media>
-
-        <md-card-area>
-          <md-card-header>
-            <span class="md-title">Solid background</span>
-            <span class="md-subhead">1/1 image</span>
-          </md-card-header>
-
-          <md-card-actions>
-            <md-button class="md-icon-button">
-              <md-icon>favorite</md-icon>
-            </md-button>
-
-            <md-button class="md-icon-button">
-              <md-icon>share</md-icon>
-            </md-button>
-          </md-card-actions>
-        </md-card-area>
-      </md-card-media-cover>
-    </md-card>
-		
-		<md-card>
-      <md-card-media-cover md-solid>
-        <md-card-media md-ratio="1:1">
+        <md-card-media md-ratio="3:4">
           <img src="../assets/clothes/1.jpeg" alt="Skyscraper">
         </md-card-media>
 
         <md-card-area>
           <md-card-header>
-            <span class="md-title">Solid background</span>
-            <span class="md-subhead">1/1 image</span>
+            <span class="md-title">50€</span>
+            <span class="md-subhead">Chanel pink sweatpants</span>
           </md-card-header>
 
           <md-card-actions>
@@ -94,7 +19,182 @@
             </md-button>
 
             <md-button class="md-icon-button">
-              <md-icon>share</md-icon>
+              <md-icon>visibility</md-icon>
+            </md-button>
+          </md-card-actions>
+        </md-card-area>
+      </md-card-media-cover>
+    </md-card>
+		
+		<md-card>
+      <md-card-media-cover md-solid>
+        <md-card-media md-ratio="3:4">
+          <img src="../assets/clothes/2.jpeg" alt="Skyscraper">
+        </md-card-media>
+
+        <md-card-area>
+          <md-card-header>
+            <span class="md-title">40€</span>
+            <span class="md-subhead">Asos oversized hoodie</span>
+          </md-card-header>
+
+          <md-card-actions>
+            <md-button class="md-icon-button">
+              <md-icon>favorite</md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button">
+              <md-icon>visibility</md-icon>
+            </md-button>
+          </md-card-actions>
+        </md-card-area>
+      </md-card-media-cover>
+    </md-card>
+		
+		<md-card>
+      <md-card-media-cover md-solid>
+        <md-card-media md-ratio="3:4">
+          <img src="../assets/clothes/3.jpeg" alt="Skyscraper">
+        </md-card-media>
+
+        <md-card-area>
+          <md-card-header>
+            <span class="md-title">30€</span>
+            <span class="md-subhead">Skyler rose formal shirt</span>
+          </md-card-header>
+
+          <md-card-actions>
+            <md-button class="md-icon-button">
+              <md-icon>favorite</md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button">
+              <md-icon>visibility</md-icon>
+            </md-button>
+          </md-card-actions>
+        </md-card-area>
+      </md-card-media-cover>
+    </md-card>
+		
+		<md-card>
+      <md-card-media-cover md-solid>
+        <md-card-media md-ratio="3:4">
+          <img src="../assets/clothes/4.jpeg" alt="Skyscraper">
+        </md-card-media>
+
+        <md-card-area>
+          <md-card-header>
+            <span class="md-title">50€</span>
+            <span class="md-subhead">Fila oversized hoodie</span>
+          </md-card-header>
+
+          <md-card-actions>
+            <md-button class="md-icon-button">
+              <md-icon>favorite</md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button">
+              <md-icon>visibility</md-icon>
+            </md-button>
+          </md-card-actions>
+        </md-card-area>
+      </md-card-media-cover>
+    </md-card>
+		
+		<md-card>
+      <md-card-media-cover md-solid>
+        <md-card-media md-ratio="3:4">
+          <img src="../assets/clothes/5.jpeg" alt="Skyscraper">
+        </md-card-media>
+
+        <md-card-area>
+          <md-card-header>
+            <span class="md-title">70€</span>
+            <span class="md-subhead">Nike training set</span>
+          </md-card-header>
+
+          <md-card-actions>
+            <md-button class="md-icon-button">
+              <md-icon>favorite</md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button">
+              <md-icon>visibility</md-icon>
+            </md-button>
+          </md-card-actions>
+        </md-card-area>
+      </md-card-media-cover>
+    </md-card>
+		
+		<md-card>
+      <md-card-media-cover md-solid>
+        <md-card-media md-ratio="3:4">
+          <img src="../assets/clothes/6.jpeg" alt="Skyscraper">
+        </md-card-media>
+
+        <md-card-area>
+          <md-card-header>
+            <span class="md-title">40€</span>
+            <span class="md-subhead">Asos blue hoodie</span>
+          </md-card-header>
+
+          <md-card-actions>
+            <md-button class="md-icon-button">
+              <md-icon>favorite</md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button">
+              <md-icon>visibility</md-icon>
+            </md-button>
+          </md-card-actions>
+        </md-card-area>
+      </md-card-media-cover>
+    </md-card>
+		
+		<md-card>
+      <md-card-media-cover md-solid>
+        <md-card-media md-ratio="3:4">
+          <img src="../assets/clothes/7.jpeg" alt="Skyscraper">
+        </md-card-media>
+
+        <md-card-area>
+          <md-card-header>
+            <span class="md-title">40€</span>
+            <span class="md-subhead">Adidas lilac T-shirt</span>
+          </md-card-header>
+
+          <md-card-actions>
+            <md-button class="md-icon-button">
+              <md-icon>favorite</md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button">
+              <md-icon>visibility</md-icon>
+            </md-button>
+          </md-card-actions>
+        </md-card-area>
+      </md-card-media-cover>
+    </md-card>
+		
+		<md-card>
+      <md-card-media-cover md-solid>
+        <md-card-media md-ratio="3:4">
+          <img src="../assets/clothes/8.jpg" alt="Skyscraper">
+        </md-card-media>
+
+        <md-card-area>
+          <md-card-header>
+            <span class="md-title">20€</span>
+            <span class="md-subhead">Asos bodysuit</span>
+          </md-card-header>
+
+          <md-card-actions>
+            <md-button class="md-icon-button">
+              <md-icon>favorite</md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button">
+              <md-icon>visibility</md-icon>
             </md-button>
           </md-card-actions>
         </md-card-area>
@@ -107,9 +207,11 @@
 <style lang="css" scoped>
   .md-card {
     width: 320px;
-    margin: 4px;
+    margin-left: 125px;
+		margin-bottom: 125px;
     display: inline-block;
     vertical-align: top;
+
   }
 </style>
 
