@@ -12,6 +12,7 @@
 				<p class="test-color">Current color: {{hex}}</p>
 			</div>
 			<Grid/>
+			<BodySize/>
 		</div>
   </div>
 </template>
@@ -19,6 +20,7 @@
 <script>
 import FileUpload from './FileUpload'
 import Grid from './Grid'
+import BodySize from './BodySize'
 
 export default {
   name: 'Main',
@@ -29,7 +31,9 @@ export default {
 	},
 	components: {
 		FileUpload,
-		Grid
+		BodySize
+		Grid,
+		Topbar,
 	},
   props: {
     msg: String
