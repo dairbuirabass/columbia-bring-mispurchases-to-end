@@ -12,12 +12,16 @@
           <br>
           <span class="md-title">50€</span>
         </div>
+        <div class="body">
+          <BodySize />
+        </div>
       </md-card-header>
 		</div>
   </div>
 </template>
 
 <script>
+import BodySize from './BodySize'
 export default {
   name: 'ProductPage',
 }
