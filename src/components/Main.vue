@@ -11,7 +11,6 @@
 				<br>
 				<md-button class="md-raised md-accent2 btn">Analyze</md-button>
 				<p class="test-color">Current color: {{hex}}</p>
-				<md-progress-bar class="md-primary loader" md-mode="indeterminate"></md-progress-bar>
 			</div>
 			<Grid/>
 		</div>

@@ -207,8 +207,7 @@
 <style lang="css" scoped>
   .md-card {
     width: 320px;
-    margin-left: 125px;
-		margin-bottom: 125px;
+    margin: 50px;
     display: inline-block;
     vertical-align: top;
 
