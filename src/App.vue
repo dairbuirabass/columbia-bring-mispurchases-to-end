@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style>
+<style src="./style.scss" lang="scss">
 #app {
   margin: 3px auto 0;
   max-width: 100%;
