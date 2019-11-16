@@ -1,12 +1,15 @@
 <template>
   <div class="file-upload">
-    <md-card class="md-primary">
+    <md-card class="md-accent">
       <md-card-header>
-        <div class="md-title">Upload image</div>
-        <md-card-media>
+        <div class="md-title">Want to know what colors would look best on you?</div>
+        <md-divider></md-divider>
+        <br>
+        <div class="md-subheading">Try our color analysis tool. Upload a picture of your face</div>
+        <md-card-media class="media">
           <md-field>
-            <label>Upload files</label>
-            <md-file v-on:change="emitToParent" placeholder="Hello" />
+            <label class="text">Upload image</label>
+            <md-file class="input" v-on:change="emitToParent" placeholder="Upload image" />
           </md-field>
         </md-card-media>
       </md-card-header>
@@ -27,10 +30,21 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.text{
+  color:black;
+  width: 100%;
+}
+.input{
+  color:black;
+  width: 400px;
+}
 .md-card {
-    width: 1300px;
-    margin: 4px;
+    width: 100%;
+    margin: 0px;
     display: inline-block;
     vertical-align: top;
   }
+.media {
+  width: 200px;
+}
 </style>

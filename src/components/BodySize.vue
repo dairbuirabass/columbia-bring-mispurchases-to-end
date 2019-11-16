@@ -1,7 +1,7 @@
 <template>
   <div class="body-size">
      <!-- http://episodic-vuejs.s3-website.eu-central-1.amazonaws.com -->
-    <iframe src="http://files.is.tue.mpg.de/erachlin/sina/body_sizing_site/" height="720" width="792" />
+    <iframe src="https://www.bodyvisualizer.com/" height="720" width="792" />
   </div>
 </template>
 
