@@ -23,7 +23,7 @@
           </router-link>
           <md-divider />
           <span class="md-title">This is a visual approximation of how the item will look on you.</span>
-          <md-button class="md-raised md-accent2 btn2">Add to cart</md-button>
+          <md-button class="md-raised md-accent2 btn">Add to cart</md-button>
         </div>
         <md-divider />
         <div class="body">
@@ -68,7 +68,10 @@ export default {
 .font {
   font-family: 'Poppins', sans-serif;
 }
-.btn{
+.btn.md-raised.md-accent2{
+  margin-left: 0;
+  background-color: #ffb3b3;
+  color: white;
   margin:30px;
   width: 300px;
 }
@@ -86,7 +89,7 @@ export default {
 }
 .btn2{
   margin-top: 20px;
-  width: 400px;
+  width: 250px;
 }
 .body{
   width: 1000px;
