@@ -9,7 +9,7 @@
         <div class="image-upload">
           <FileUpload v-on:childToParent="passImgToCanvas" />
           <canvas id="uploadedImage" v-on:click="getCurrentColor"></canvas>
-          <md-button class="md-raised md-accent2 btn analyze">Analyze</md-button>
+          <md-button class="md-raised md-accent2 btn analyze" v-on:click="generate=true">Analyze</md-button>
           <p class="test-color">Current color: {{hex}}</p>
         </div>
         <div class="face-colors">
@@ -26,7 +26,7 @@
             <span>Skin color: </span>
           </div>
         </div>
-        <Palette />
+        <Palette v-bind:visible="generate" />
       </div>
       <Grid/>
 		</div>
@@ -44,7 +44,8 @@ export default {
   data: function () {
     return {
       hex: 0,
-      currentClick: 0
+      currentClick: 0,
+      generate: false
 		}
   },
   computed: {
@@ -54,9 +55,6 @@ export default {
     FileUpload,
     Palette,
     Grid
-	},
-  props: {
-    msg: String
 	},
   methods: {
 		passImgToCanvas: function (e) {
@@ -85,15 +83,15 @@ export default {
       this.hex = hex
       switch (this.currentClick) {
         case 0:
-          this.setEyesColor(hex)
+          this.setEyesColor('rgb(122,130,132)')
           break;
 
         case 1:
-          this.setHairColor(hex)
+          this.setHairColor('rgb(37,26,24')
           break;
 
         case 2:
-          this.setSkinColor(hex)
+          this.setSkinColor('rgb(210,167,164')
           break;
       
         default:

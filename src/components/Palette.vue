@@ -1,5 +1,6 @@
 <template>
-  <div class="palette">
+  <div class="palette"
+       v-bind:class="[!visible ? 'hidden' : '']" >
     <div>
       <div v-bind:key="item" v-for="item in items"
            v-bind:style="{ backgroundColor: item.color }" class="color-box">
@@ -12,6 +13,9 @@
 <script>
 export default {
   name: 'Palette',
+  props: {
+    visible: Boolean
+  },
   data: function () {
     return {
       items: [
@@ -50,5 +54,9 @@ export default {
       line-height: 160px;
     }
   }
+}
+
+.hidden {
+  visibility: hidden;
 }
 </style>
