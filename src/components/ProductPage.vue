@@ -8,6 +8,7 @@
               <img src="../assets/clothes/1.jpeg" class="img">
             </router-link>
           </div>
+          <md-divider />
           <div class="desc font">
             <span class="md-headline">Chanel pink sweater</span>
             <br>
@@ -20,6 +21,14 @@
           <span class="md-headline">Enter your dimensions for correct sizing:</span>
           <BodySize/>
         </div>
+        <md-divider />
+        <div class="sweater">
+            <router-link to='/product'>
+              <img src="../assets/sweater.jpeg" class="img">
+            </router-link>
+            <span class="md-title">This is a visual approximation of how the item will look on you.</span>
+            <md-button class="md-raised md-accent2 btn1">Add to cart</md-button>
+          </div>
       </md-card-header>
 		</div>
   </div>
@@ -48,7 +57,7 @@ export default {
 .md-card {
     width: 300px;
     display: inline-block;
-    vertical-align: top;
+    // vertical-align: top;
 }
 .img{
   margin: 30px;
@@ -64,7 +73,11 @@ export default {
   display: inline-block;
 }
 .body{
-  margin-top: 0%;
+  margin-bottom: 5%;
   display: inline-block;
+}
+.btn1{
+  margin: 40px;
+  width: 400px;
 }
 </style>
