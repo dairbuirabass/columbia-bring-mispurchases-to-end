@@ -14,7 +14,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   iframe {
-    width: 800px;
+    width: 1200px;
     height: 600px;
     vertical-align: none;
   }
