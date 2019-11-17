@@ -49,11 +49,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .product {
-  width: 100%;
-  margin: 30px;
-  background-color: rgb(230, 230, 230);
-	border-radius: 10px;
-	overflow: hidden;
+    padding-left: 50px;
+    margin: 20px auto;
+    max-width: 1440px;
+		background-color: white;
+		border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 36px 28px rgba(0,0,0,0.1);
 }
 .md-card {
     width: 300px;
@@ -75,7 +77,7 @@ export default {
 }
 .sweaterdemo{
   margin-left: 300px;
-  width: 300px;
+  width: 250px;
   display: inline-block;
 }
 .btn1{
