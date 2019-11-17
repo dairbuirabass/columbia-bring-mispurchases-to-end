@@ -37,6 +37,7 @@ export default {
 .palette {
   flex: 1;
   margin-left: 2%;
+  margin-right: 170px;
   width: 50%;
   min-width: 460px;
 
