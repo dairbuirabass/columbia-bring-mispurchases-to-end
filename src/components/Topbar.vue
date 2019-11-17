@@ -71,6 +71,10 @@ export default {
   .menu{
     background-color: #ffb3b3;
     width: 100%;
+    
+    .md-button {
+      color: white;
+    }
   }
   .font{
   font-family: 'Poppins', sans-serif;

@@ -24,12 +24,15 @@
 import BodySize from './BodySize'
 export default {
   name: 'ProductPage',
+  components: {
+    BodySize
+	},
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.product{
+.product {
   width: 95%;
   margin: 30px;
   background-color: rgb(230, 230, 230);
@@ -42,10 +45,10 @@ export default {
     display: inline-block;
     vertical-align: top;
 }
-.img{
+.img {
   margin: 30px;
 }
-.font{
+.font {
   font-family: 'Poppins', sans-serif;
 }
 </style>

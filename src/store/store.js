@@ -8,8 +8,12 @@ export const store = new Vuex.Store({
     colorEyes: {
       value: ''
     },
-    colorHair: '',
-    colorSkin: '',
+    colorHair: {
+      value: ''
+    },
+    colorSkin: {
+      value: ''
+    },
     user: { id: 'aaa', name: 'Adsasas' },
     events: [
       {
@@ -41,15 +45,33 @@ export const store = new Vuex.Store({
   mutations: {
     setEyesColor(state, color){
       state.colorEyes = color
+    },
+    setHairColor(state, color){
+      state.colorHair = color
+    },
+    setSkinColor(state, color){
+      state.colorSkin = color
     }
   },
   actions: {
     setNewEyesColor(context, color){
       context.commit('setEyesColor', color);
+    },
+    setNewHairColor(context, color){
+      context.commit('setHairColor', color);
+    },
+    setNewSkinColor(context, color){
+      context.commit('setSkinColor', color);
     }
   },
   getters: {
     colorEyes: state => {
+      return state.colorEyes
+    },
+    colorHair: state => {
+      return state.colorEyes
+    },
+    colorSkin: state => {
       return state.colorEyes
     },
     catLength: state => {
